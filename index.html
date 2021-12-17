@@ -1,0 +1,274 @@
+<html lang="en">
+
+<head>
+  <link rel="icon" href="gambar/icon1.png">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BettaFish</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<style>
+  .banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(gambar/bg.jpg);
+    height: auto;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .banner-content {
+    height: auto;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+  }
+
+  .carousel-content {
+    background-color: #000000;
+
+  }
+</style>
+
+<body>
+  <!--START NAVBAR-->
+  <nav class="navbar navbar-expand-md navbar-dark bg-black sticky-top bg-gradient">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="gambar/icon1.png" alt="" width="35" height="35"><b class="ps-1">BettaFish</b>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item mx-1">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link" data-bs-toggle="modal" data-bs-target="#aboutModal">About</a>
+          </li>
+          <li class="nav-item mx-1">
+            <a class="nav-link" href="#">Bantuan</a>
+          </li>
+          <li class="nav-item mx-1 dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Jenis Cupang
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Halfmoon</a></li>
+              <li><a class="dropdown-item" href="#">Plakat</a></li>
+              <li><a class="dropdown-item" href="#">Crown Tail</a></li>
+              <li><a class="dropdown-item" href="#">Double Tail</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Tips Perawatan</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled pe-3">Promo!</a>
+          </li>
+        </ul>
+        <form class="d-flex mt-2">
+          <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!--END NAVBAR-->
+<!--about Modal -->
+<div class="modal fade" id="aboutModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Test Junior Web Developer</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>
+          Membuat halaman html menggunakan bootstrap 5 dengan navbar, carousel, cards, modal dan button.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Understood</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <!--Banner-->
+  <div class="container-fluid banner pb-5">
+    <div class="container banner-content col-lg-6">
+      <div class="text-center">
+        <p style="font-size: 99px;">Betta Fish</p>
+        <!--carousel-->
+        <div class="container-fluid py-3">
+          <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide col-lg-12 " data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner rounded-bottom">
+                <div class="carousel-item active ">
+                  <img src="gambar/logo3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="gambar/logo1.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Jenis Ikan Cupang</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae explicabo, illum debitis rerum
+                      tempore unde voluptatum! Omnis dicta magni rerum corporis?</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="gambar/jajal.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Merawat Ikan Cupang</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae explicabo, illum debitis rerum
+                      tempore unde voluptatum! Omnis dicta magni rerum corporis?</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!--Button Reservasi-->
+        
+          <button class="btn btn-outline-success my-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Reservasi</button> <br><br>
+        
+        
+        <!--end carousel-->
+        <p class="d-none d-sm-block banner">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae
+          quaerat harum vel ipsum ipsam itaque similique, voluptate perferendis amet, facilis distinctio ex delectus
+          culpa commodi atque aperiam tempore quas dolorum esse ea nobis doloribus! Aliquid fuga minus asperiores
+          nesciunt dolorem, laboriosam fugiat provident itaque soluta reiciendis, illum corporis nostrum id. Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Facilis sint, voluptatum architecto doloremque neque porro veniam
+          repellat similique provident asperiores aspernatur. Beatae ut quibusdam incidunt tempore? Impedit nemo
+          voluptas omnis.</p>
+      </div>
+    </div>
+  </div>
+  <!--end banner-->
+  <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Jual Ikan Cupang</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <div class="mb-3">
+          <label for="nama" class="form-label">Jenis Cupang</label>
+          <input type="text" class="form-control" id="nama">
+          </div>
+          <div>
+            <label for="harga" class="form-label">Harga (IDR)</label>
+            <input type="number" class="form-control" id="harga">
+          </div>
+          <div class="mb-3">
+            <label for="noHp" class="form-label">No. Handphone</label>
+            <input type="number" class="form-control" id="noHp">
+          </div>
+          <div class="mb-3">
+            <label for="tgl" class="form-label">Tanggal</label>
+            <input type="date" id="tgl" class="form-control">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+        <button type="button" class="btn btn-primary">Jual</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <!--Cards-->
+  <div class="container-fluid py-5">
+    <div class="container">
+      <h1 class="text-center mb-5">Produk Kami</h1>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+          <div class="card">
+            <img src="gambar/preview.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">
+                <h5>Cupang Halfmoon</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-primary">Lihat</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+          <div class="card">
+            <img src="gambar/preview.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">
+                <h5>Cupang Plakat</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-primary">Lihat</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+          <div class="card">
+            <img src="gambar/preview.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">
+                <h5>Cupang Crown Tail</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-primary">Lihat</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+          <div class="card">
+            <img src="gambar/preview.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">
+                <h5>Cupang Double Tail</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                  card's content.</p>
+                <a href="#" class="btn btn-primary">Lihat</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!--end Cards-->
+  <!--Modals-->
+
+  <!--End Modals-->
+  <!--ISI BODY-->
+  <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
